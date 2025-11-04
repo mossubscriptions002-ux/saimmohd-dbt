@@ -6,7 +6,11 @@ models:
           - not_null
           - unique
           - accepted_values:
-              values: [1,2,3,4]
+              values: [1,2,3,4,5]
               config:
                 severity: warn
+
+      - name: emp_salary
+        tests:
+          - value_check
                 
