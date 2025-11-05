@@ -1,6 +1,12 @@
 models:
   - name: employee
     description: "DBT Model for employee table"
+
+  - name: customers
+    description: "DBT Customer table"
+
+  - name: customer_view
+    description: "DBT MODEL using country as USA"
    
 sources:
   - name: employee
@@ -8,3 +14,10 @@ sources:
     schema: PUBLIC
     tables:
       - name: EMPLOYEE_RAW
+
+
+  - name: customers
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: CUSTOMER_SRC
