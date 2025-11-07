@@ -1,0 +1,11 @@
+country_code,country_name,continent,currency,gender
+US,United States,North America,USD
+CA,Canada,North America,USD
+BR,Brazil,South America,USD
+FR,France,Europe,EUR
+CN,China,Asia,CNY
+IN,India,Asia,INR
+NG,Nigeria,Africa,NGN
+AU,Australia,Oceania,AUD
+RU,Russia,Europe/Asia,RUB
+JP,Japan,Asia,JPY

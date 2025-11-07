@@ -1,0 +1,72 @@
+models:
+  - name: employee
+    description: "DBT Model for employee table"
+
+  - name: customers
+    description: "DBT Customer table"
+
+  - name: customer_view
+    description: "DBT MODEL using country as USA"
+
+  - name: sales
+    description: "DBT model for incremental materialization"
+
+  - name: product
+    description: "Products model for insert+delete"
+
+  - name: stg_orders__BASE_ORDERS
+    description: "DBT MODEL CREATED AS ephemeral table"
+
+  - name: stg_orders__FINAL_ORDERS
+    description: "CREATED USING BASE ORDERS AS TABLE"
+
+
+   
+sources:
+  - name: employee
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: EMPLOYEE_RAW
+
+
+  - name: customers
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: CUSTOMER_SRC
+
+  - name: sales
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: sales_src
+
+  - name: product
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: product_src
+  - name: purchase
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: PURCHASE_SRC
+
+  - name: orders
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: BASE_ORDERS
+
+  - name: patient
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: PATIENT_SRC
+      
+  - name: session
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: SESSION_SRC
