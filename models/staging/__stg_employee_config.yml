@@ -20,6 +20,9 @@ models:
   - name: stg_orders__FINAL_ORDERS
     description: "CREATED USING BASE ORDERS AS TABLE"
 
+  - name: concat_address
+  
+  - name: concat_name
 
    
 sources:
