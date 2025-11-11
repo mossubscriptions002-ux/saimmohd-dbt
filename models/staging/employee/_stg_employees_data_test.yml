@@ -1,0 +1,16 @@
+models:
+  - name: stg_public__employee
+    columns:
+      - name: emp_id
+        tests:
+          - not_null
+          - unique
+          - accepted_values:
+              values: [1,2,3,4,5]
+              config:
+                severity: warn
+
+      - name: emp_salary
+        tests:
+          - value_check
+                
